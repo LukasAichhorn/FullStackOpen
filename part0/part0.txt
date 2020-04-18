@@ -1,0 +1,13 @@
+title FullstackOpen Part0 diagram
+note right of browser: User clicks on Save button
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note 
+note left of server: recives form data
+server-->browser: redirect to /notes
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+server-->browser: sends notes.html
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server-->browser: sends main.css
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+server-->browser: sends main.js
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server-->browser: sends data as json
